@@ -1,0 +1,150 @@
+.globalwrapper {
+  margin-top: 0px;
+  padding: 0;
+  width: 1300px;
+  height: 1847px;
+  background-image: url(./Background.jpg);
+  margin: 0 auto;
+}
+
+.head_area {
+  width: 1300px;
+  height: 566px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 12fr 44fr;
+  grid-template-columns: 14fr 56fr 46fr 14fr;
+  grid-template-areas: "button_left logo1 main_nav button_right" "button_left player header_text button_right"
+}
+
+button_left {
+  grid-area: button_left;
+}
+
+button_right {
+  grid-area: button_right;
+  background-color: blueviolet;
+}
+
+logo1 {
+  grid-area: logo1;
+  background-color: red;
+}
+
+main_nav {
+  grid-area: main_nav;
+  background-color: orange;
+}
+
+player {
+  grid-area: player;
+  background-color: green;
+}
+
+header_text {
+  grid-area: header_text;
+  background-color: greenyellow;
+}
+
+.icon_area {
+  width: 1020px;
+  height: 212px;
+  margin: 0 auto;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "better_design customise its_free"
+}
+
+better_design {
+  grid-area: better_design;
+  background-color: orangered;
+}
+
+customise {
+  grid-area: customise;
+  background-color: orange;
+}
+
+its_free {
+  grid-area: its_free;
+  background-color: rosybrown;
+}
+
+.yellow_area {
+  width: 1020px;
+  height: 508px;
+  margin: 0 auto;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 11fr 23fr 35fr 33fr;
+  grid-template-rows: 110fr 233fr 85fr 80fr;
+  grid-template-areas: "yellow_area_head yellow_area_head yellow_area_head yellow_area_head" "yellow_area_text yellow_area_text yellow_area_video yellow_area_twitter" "yellow_area_day . . ." "yellow_area_scroll yellow_area_scroll yellow_area_scroll yellow_area_scroll"
+}
+
+yellow_area_head {
+  grid-area: yellow_area_head;
+  background-color: rosybrown;
+}
+
+yellow_area_text {
+  grid-area: yellow_area_text;
+  background-color: yellow;
+}
+
+yellow_area_video {
+  grid-area: yellow_area_video;
+  background-color: yellowgreen;
+}
+
+yellow_area_twitter {
+  grid-area: yellow_area_twitter;
+  background-color: salmon;
+}
+
+yellow_area_day {
+  grid-area: yellow_area_day;
+  background-color: orange;
+}
+
+yellow_area_scroll {
+  grid-area: yellow_area_scroll;
+  height: 13px;
+  margin-left: 73px;
+  margin-top: 43px;
+  width: 895px;
+  overflow-x: scroll;
+}
+
+.gray_area {
+  width: 1020px;
+  height: 495px;
+  margin: 0 auto;
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  grid-template-rows: 90px 405px;
+  grid-template-areas: "gray_area_head gray_area_head" "gray_area_img gray_area_text"
+}
+
+gray_area_head {
+  grid-area: gray_area_head;
+  background-color: orange;
+}
+
+gray_area_img {
+  grid-area: gray_area_img;
+  background-color: green;
+}
+
+gray_area_text {
+  grid-area: gray_area_text;
+  background-color: greenyellow;
+}
+
+.footer {
+  width: 1020px;
+  height: 65px;
+  margin: 0 auto;
+  background-color: red;
+}
