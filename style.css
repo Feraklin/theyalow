@@ -1,10 +1,10 @@
 .globalwrapper {
   margin-top: 0px;
-  padding: 0;
   width: 1300px;
   height: 1847px;
   background-image: url(./Background.jpg);
   margin: 0 auto;
+  padding: 0;
 }
 
 .head_area {
@@ -15,25 +15,46 @@
   position: relative;
   grid-template-rows: 12fr 44fr;
   grid-template-columns: 14fr 56fr 46fr 14fr;
-  grid-template-areas: "button_left logo1 main_nav button_right" "button_left player header_text button_right"
+  grid-template-areas: "button_left logo1 main_nav button_right" "button_left player header_text button_right";
 }
 
 button_left {
   grid-area: button_left;
 }
 
-button_left img {
+button_left button {
   padding-left: 0px;
   margin-top: 300px;
+  height: 57px;
+  width: 32px;
+  border: 0;
+  background-color: Transparent;
+  outline: none;
+  background-image: url(./button_left.png)
+}
+
+button_left button:hover {
+  border: 2px solid red;
 }
 
 button_right {
   grid-area: button_right;
 }
 
-button_right img {
-  padding-left: 108px;
+button_right button {
+  margin-left: 108px;
   margin-top: 300px;
+  padding: 0px;
+  border: 0;
+  height: 57px;
+  width: 32px;
+  outline: none;
+  background-color: Transparent;
+  background-image: url(./button_right.png);
+}
+
+button_right button:hover {
+  border: 2px solid red;
 }
 
 logo1 {
@@ -42,13 +63,13 @@ logo1 {
 
 logo1 h1 {
   color: white;
-  padding-left: 90px;
-  padding-top: 18px;
-  font-size: 42px;
-  font-family: 'pt-sans';
-  font-style: normal;
+  padding-left: 87px;
+  padding-top: 22px;
+  font-size: 41.5px;
+  font-family: 'lucida sans';
+  font-style: italic;
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
 }
 
 logo1 img {
@@ -58,13 +79,14 @@ logo1 img {
 }
 
 .cool {
-  color: #f5c506;
-  padding-left: 90px;
-  padding-top: 45px;
+  color: rgba(245, 197, 6, 255);
+  padding-left: 20px;
+  padding-top: 48px;
   margin-bottom: 0px;
   font-size: 62px;
   font-family: 'open-sans';
   font-style: normal;
+  text-align: center;
   font-weight: 300;
   letter-spacing: 0px;
 }
@@ -72,23 +94,141 @@ logo1 img {
 .minimal {
   color: #ffffff;
   margin-top: 0;
-  padding-left: 48px;
+  padding-left: 30px;
   padding-top: 0;
   font-size: 62px;
   font-family: 'open-sans';
   font-style: normal;
+  text-align: center;
+  line-height: 66px;
   font-weight: 300;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 main_nav {
   grid-area: main_nav;
-  background-color: orange;
+}
+
+main_nav nav {
+  height: 41px;
+  margin-top: 70px;
+  margin-left: 6px;
+  background-color: #f5c506;
+  box-shadow: -4px -5px 0px rgba(245, 197, 6, 0.3), -8px -8px 0px rgba(245, 197, 6, 0.25);
+}
+
+nav ul {
+  height: 41px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:first-child {
+  height: 41px;
+  width: 134px;
+  border-right: 1px solid #dcb105
+}
+
+nav ul li:nth-child(2) {
+  margin-left: 10px;
+  height: 41px;
+  width: 118px;
+  border-right: 1px solid #dcb105
+}
+
+nav ul li:nth-child(3) {
+  margin-left: 12px;
+  height: 41px;
+  width: 118px;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin-top: 12px;
+  height: 41px;
+  width: 170px;
 }
 
 player {
   grid-area: player;
-  background-color: green;
+}
+
+.button_play_square {
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 40px;
+  z-index: 2;
+  height: 27px;
+  width: 27px;
+  border: 0;
+  outline: none;
+  background-color: Transparent;
+  background-image: url(./button_video_play_square.png);
+}
+
+.button_play_square:hover {
+  border: 2px solid red;
+}
+
+.button_play_round {
+  position: absolute;
+  margin-top: 171px;
+  margin-left: 251px;
+  z-index: 2;
+  border-radius: 67px;
+  height: 67px;
+  width: 67px;
+  border: 0;
+  outline: none;
+  background-color: Transparent;
+  background-image: url(./button_video_play_round.png);
+}
+
+.button_play_round:hover {
+  border: 2px solid red;
+}
+
+.button_sound {
+  position: absolute;
+  margin-top: 327px;
+  margin-left: 525px;
+  z-index: 2;
+  height: 15px;
+  width: 15px;
+  border: 0;
+  outline: none;
+  background-color: Transparent;
+  background-image: url(./button_video_sound.png);
+}
+
+.button_sound:hover {
+  border: 2px solid red;
+}
+
+.timeline {
+  position: absolute;
+  margin-top: 329px;
+  margin-left: 90px;
+  z-index: 2;
+  height: 12px;
+  width: 404px;
+  border: 0;
+  outline: none;
+  background-color: Transparent;
+  background-image: url(./button_video_timeline.png);
+}
+
+.timeline:hover {
+  border: 2px solid red;
+}
+
+player video {
+  padding-left: 10px;
+  padding-top: 41px;
+  height: 327px;
+  width: 549px;
 }
 
 header_text {
@@ -178,8 +318,9 @@ yellow_area_scroll {
 gray_area_head {
   grid-area: gray_area_head;
 }
-gray_area_head p{
-  padding-left:210px;
+
+gray_area_head p {
+  padding-left: 210px;
   margin-top: 32px;
   color: #f5c506;
   font-size: 41px;
@@ -187,15 +328,16 @@ gray_area_head p{
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0px;
-} 
+}
 
 gray_area_img {
   grid-area: gray_area_img;
-
 }
-gray_area_img img{
+
+gray_area_img img {
   margin-top: 3px;
 }
+
 gray_area_text {
   grid-area: gray_area_text;
   background-color: greenyellow;
