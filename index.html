@@ -11,100 +11,107 @@
 
 <body>
   <div class="globalwrapper">
-    <div class="head_area">
-      <logo1>
-        <img src="./logo.png" alt="LOGO">
-        <H1>THEYALOW</H1>
-      </logo1>
-      <main_nav>
-        <nav>
-          <ul>
-            <li>
-              <a href="#"><img src="./nav_about.png" alt="about us"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./nav_services.png" alt="services"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./nav_contact.png" alt="contact"></a>
-            </li>
-          </ul>
-        </nav>
-      </main_nav>
-      <player>
-        <button class="button_play_square"></button>
-        <button class="button_play_round"></button>
-        <button class="button_sound"></button>
+    <header class="header">
+      <div class="column-left">
+        <button class="button-left"></button>
+      </div>
+      <div class="column-right">
+        <button class="button-right"></button>
+      </div>
+      <div class="logo-top">
+        <img class="logo-image" src="./logo.png" alt="LOGO">
+        <h1 class="logo-text">THEYALOW</h1>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li>
+            <a class="link-about" href="#"><img src="./nav_about.png" alt="about us"></a>
+          </li>
+          <li>
+            <a class="link-services" href="#"><img src="./nav_services.png" alt="services"></a>
+          </li>
+          <li>
+            <a class="link-contact" href="#"><img src="./nav_contact.png" alt="contact"></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="player">
+        <button class="button-play-square"></button>
+        <button class="button-play-round"></button>
+        <button class="button-sound"></button>
         <button class="timeline"></button>
-        <video poster="./video_poster.png">
+        <video class="video-player" poster="./video_poster.png">
               <source src="URL">
-
              </video>
-      </player>
-      <header_text>
-        <p Class="cool">THE COOL</p>
-        <p Class="minimal">THE MINIMAL</p>
-      </header_text>
-      <button_left>
-        <button></button>
-      </button_left>
-      <button_right>
-        <button></button>
-      </button_right>
+      </div>
+      <div class="header-text">
+        <p>THE COOL</p>
+        <p>THE MINIMAL</p>
+      </div>
+
+    </header>
+    <div class="icon-area">
+      <div class="better-design">
+        <img src="./Better design.svg" alt="better_design">
+        <p>BETTER DESIGN</p>
+      </div>
+      <div class="customise">
+        <img src="./customise.svg" alt="customise">
+        <p>CUSTOMISE</p>
+      </div>
+      <div class="its_free">
+        <img src="./its_free.svg" alt="its free">
+        <p>ITS FREE</p>
+      </div>
     </div>
-    <div class="icon_area">
-      <better_design>
-
-      </better_design>
-      <customise>
-
-      </customise>
-      <its_free_1>
-
-      </its_free_1>
-    </div>
-    <div class="yellow_area">
-      <yellow_area_head>
-
-      </yellow_area_head>
-      <yellow_area_text>
-
-      </yellow_area_text>
-      <yellow_area_video>
-
-      </yellow_area_video>
-      <yellow_area_twitter>
-
-      </yellow_area_twitter>
-      <yellow_area_day>
-
-      </yellow_area_day>
-      <yellow_area_scroll>
-        <div class="scrollbar" id="style-1">
-
-        </div>
-      </yellow_area_scroll>
-    </div>
-    <div class="gray_area">
-      <gray_area_head>
+    <div class="yellow-area">
+      <div class="yellow-area-head">
         <p>LOREM IPSUM DOLOR SIT AMET</p>
-      </gray_area_head>
-      <gray_area_img>
+      </div>
+      <div class="yellow-area-text">
+        <button class="button-plus"></button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut</p>
+
+      </div>
+      <div class="yellow-area-video">
+          <button class="button-play-round"></button>
+          <video class="video-player-body" poster="./video_poster-2.png">
+            <source src="URL">
+           </video>
+      </div>
+      <div class="yellow-area-twitter">
+        <button class="button-plus"></button>
+        <p>22</p>
+        <img src="./twitter.svg" alt="twitter">
+      </div>
+      <div class="yellow-area-day">
+        <p class="date">25</p>
+        <p class="month">APRIL</p>
+      </div>
+      <div class="yellow-area-scroll">
+        <input type="range" min="0" max="100" value="35">
+      </div>
+    </div>
+    <div class="gray-area">
+      <div class="gray-area-head">
+        <p>LOREM IPSUM DOLOR SIT AMET</p>
+      </div>
+      <div class="gray-area-img">
         <img src="./gray_area_img.png" alt="Devices">
-      </gray_area_img>
-      <gray_area_text>
+      </div>
+      <div class="gray-area-text">
         <ul>
           <li>Sed ut perspiciatis unde omnis</li>
           <li>Lorem ipsum dolor sit amet, con- sectetur adipisicing </li>
           <li>Sed ut perspiciatis unde omnis</li>
           <li>Lorem ipsum dolor sit amet, con- sectetur adipisicing </li>
         </ul>
-      </gray_area_text>
+      </div>
     </div>
     <div class="footer">
-      <logo2>
+      <div class="logo2">
         <img src="./logo2.png" alt="Logo">
-      </logo2>
+      </div>
       <p>THEYALOW</p>
     </div>
   </div>
