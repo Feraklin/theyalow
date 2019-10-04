@@ -1072,6 +1072,36 @@
   .footer-img img {
     display: none;
   }
+  .twitter-message-text {
+    width: 204px;
+    height: 27px;
+    margin-top: 2px;
+    margin-left: 19px;
+
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: inset 1px 1px 4px grey;
+  }
+  .send-message {
+    width: 69px;
+    height: 31px;
+    margin-top: -9px;
+    margin-left: -6px;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    background: linear-gradient(to bottom, #e9a826, #cf8e0c);
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+  }
+  .send-message:hover {
+    border: 2px solid red;
+  }
   .footer-logo {
     display: flex;
     width: 640px;
